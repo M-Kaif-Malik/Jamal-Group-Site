@@ -1,7 +1,10 @@
-const revealElements = document.querySelectorAll('.reveal');
-const backToTopBtn = document.querySelector('.back-to-top');
+// Jamal Group main scripting
 
+// Scroll Reveal
 function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length === 0) return;
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -9,26 +12,38 @@ function initScrollReveal() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.18 });
+  }, { threshold: 0.12 });
 
   revealElements.forEach(el => observer.observe(el));
 }
 
+// Stats Counter Animation
 function initCounters() {
   const counters = document.querySelectorAll('[data-counter]');
+  if (counters.length === 0) return;
 
   const counterObserver = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const element = entry.target;
         const targetValue = Number(element.dataset.counter);
-        const duration = 1600;
+        const duration = 1500;
         const startTime = performance.now();
 
         const update = (time) => {
           const progress = Math.min((time - startTime) / duration, 1);
           const value = Math.floor(progress * targetValue);
-          element.textContent = `${value}${element.dataset.counter === '35' ? '+' : ''}`;
+          
+          if (targetValue === 35) {
+            element.textContent = `${value}+`;
+          } else if (targetValue === 100) {
+            element.textContent = `${value}%`;
+          } else if (targetValue === 120) {
+            element.textContent = `${value}+`;
+          } else {
+            element.textContent = value;
+          }
+          
           if (progress < 1) {
             requestAnimationFrame(update);
           }
@@ -38,27 +53,44 @@ function initCounters() {
         obs.unobserve(element);
       }
     });
-  }, { threshold: 0.4 });
+  }, { threshold: 0.2 });
 
   counters.forEach(counter => counterObserver.observe(counter));
 }
 
-function initBackToTop() {
-  if (!backToTopBtn) return;
+// Back to Top & Sticky Nav Scrolled Effect
+function initScrollEffects() {
+  const backToTopBtn = document.querySelector('.back-to-top');
+  const header = document.querySelector('.nav-main');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 350) {
-      backToTopBtn.classList.add('show');
-    } else {
-      backToTopBtn.classList.remove('show');
+    // Back to top opacity toggle
+    if (backToTopBtn) {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    }
+
+    // Nav bar scrolled compression & glass opacity transition
+    if (header) {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
   });
 
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 }
 
+// Smooth scrolling for hash links
 function initAnchorLinks() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (event) => {
@@ -72,29 +104,25 @@ function initAnchorLinks() {
   });
 }
 
+// Contact Form Handler
 function initContactForm() {
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
+  const form = document.getElementById('contactForm');
+  const note = document.getElementById('formNote');
+  if (!form || !note) return;
 
-  const note = document.querySelector('.form-note');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    note.textContent = 'Thank you for contacting Jamal Group. Our team will reach out shortly.';
+    note.textContent = 'Thank you for reaching out. A corporate representative from the selected division will contact you shortly.';
+    note.style.color = 'var(--secondary)';
     form.reset();
   });
-
-  const sendButton = document.getElementById('sendBtn');
-  if (sendButton) {
-    sendButton.addEventListener('click', () => {
-      note.textContent = 'Thank you for contacting Jamal Group. Our team will reach out shortly.';
-    });
-  }
 }
 
+// Initializing
 window.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initCounters();
-  initBackToTop();
+  initScrollEffects();
   initAnchorLinks();
   initContactForm();
 });

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +7,6 @@
   <meta name="description" content="Jamal Group is a diversified industrial group in Pakistan delivering construction, engineering, and concrete manufacturing excellence." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -26,7 +25,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="subsidiaries.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,54 +46,54 @@
   </header>
 
   <main>
-    <section class="hero hero-home text-white overflow-hidden">
-      <div id="heroCarousel" class="carousel carousel-fade hero-carousel" data-bs-ride="carousel">
+    <!-- Hero Slider Section -->
+    <section class="hero overflow-hidden">
+      <div id="heroCarousel" class="carousel carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
           <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url('assets/hero-slide-1.jpg');"></div>
-          <div class="carousel-item" style="background-image: url('assets/hero-slide-2.jpg');"></div>
-          <div class="carousel-item" style="background-image: url('assets/hero-slide-3.jpg');"></div>
+          <div class="carousel-item active" style="background-image: url('assets/hero-slide-1.png');"></div>
+          <div class="carousel-item" style="background-image: url('assets/hero-slide-2.png');"></div>
+          <div class="carousel-item" style="background-image: url('assets/hero-slide-3.png');"></div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
       <div class="hero-overlay"></div>
-      <div class="container py-6">
+      <div class="container">
         <div class="row align-items-center gy-5">
           <div class="col-lg-7">
-            <img src="assets/main_logo.png" alt="Jamal Group logo" class="hero-logo" />
-            <p class="eyebrow text-white">Leading industrial growth</p>
-            <h1 class="display-5 fw-bold">Building Pakistan's Future</h1>
-            <p class="lead text-white-75">Jamal Group delivers premium construction, engineering and concrete manufacturing services across the country with experience, scale and trust.</p>
+            <span class="eyebrow eyebrow-accent">Jamal Group Pakistan</span>
+            <h1 class="text-white text-gradient-accent">Building Pakistan's Future</h1>
+            <p class="lead">Engineering growth, building strength, and laying reliable foundations for tomorrow through industrial excellence since 1995.</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-              <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+              <a href="contact.html" class="btn btn-primary btn-lg">Partner With Us <i class="bi bi-arrow-right"></i></a>
+              <a href="about.html" class="btn btn-outline-light btn-lg">Our Story</a>
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="hero-card shadow-lg p-4 bg-white rounded-4 text-dark">
+            <div class="hero-card-glass">
               <div class="d-flex align-items-center gap-3 mb-3">
-                <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3 rounded-pill">Jamal Group</span>
-                <span class="text-muted small">35+ Years</span>
+                <span class="badge bg-secondary bg-opacity-25 text-white py-2 px-3 rounded-pill">Corporate Profile</span>
+                <span class="text-white-50 small"><i class="bi bi-clock-history me-1"></i>30+ Years</span>
               </div>
-              <h2 class="h4 fw-semibold">Pakistan's diversified industrial leader</h2>
-              <p class="mb-4">Focused on construction, engineering and concrete manufacturing with nationwide capabilities and corporate-grade delivery.</p>
+              <h2 class="h4 fw-bold mb-3">Industrial Leadership</h2>
+              <p class="text-white-75 mb-4">Focused on civil construction, contract engineering, and high-quality concrete solutions nationwide.</p>
               <div class="d-flex gap-3 flex-wrap">
-                <div class="stat-box border rounded-4 p-3 text-center">
-                  <strong>3</strong>
-                  <p class="mb-0 small text-secondary">Companies</p>
+                <div class="stat-box border border-white border-opacity-10 rounded-4 p-3 text-center flex-grow-1" style="background: rgba(255,255,255,0.03);">
+                  <strong class="fs-4 text-gradient-accent">3</strong>
+                  <p class="mb-0 small text-white-50">Subsidiaries</p>
                 </div>
-                <div class="stat-box border rounded-4 p-3 text-center">
-                  <strong>Hundreds</strong>
-                  <p class="mb-0 small text-secondary">Projects</p>
+                <div class="stat-box border border-white border-opacity-10 rounded-4 p-3 text-center flex-grow-1" style="background: rgba(255,255,255,0.03);">
+                  <strong class="fs-4 text-gradient-accent">120+</strong>
+                  <p class="mb-0 small text-white-50">Projects</p>
                 </div>
               </div>
             </div>
@@ -103,38 +102,90 @@
       </div>
     </section>
 
+    <!-- Client Logo Carousel -->
+    <section class="py-4 bg-white border-bottom">
+      <div class="container-fluid px-0">
+        <div class="text-center mb-3">
+          <span class="small fw-bold text-uppercase text-secondary tracking-wider" style="letter-spacing: 0.1em;">Trusted by Major Public &amp; Private Sectors</span>
+        </div>
+        <div class="logo-marquee-wrap">
+          <div class="logo-marquee">
+            <div class="logo-item"><img src="assets/lda_logo.svg" alt="LDA Logo" /></div>
+            <div class="logo-item"><img src="assets/wasa_logo.svg" alt="WASA Logo" /></div>
+            <div class="logo-item"><img src="assets/mcl_logo.svg" alt="MCL Logo" /></div>
+            <div class="logo-item"><img src="assets/cw_logo.svg" alt="C&amp;W Logo" /></div>
+            <div class="logo-item"><img src="assets/idap_logo.svg" alt="IDAP Logo" /></div>
+            <div class="logo-item"><img src="assets/pha_logo.svg" alt="PHA Logo" /></div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="logo-item"><img src="assets/lda_logo.svg" alt="LDA Logo" /></div>
+            <div class="logo-item"><img src="assets/wasa_logo.svg" alt="WASA Logo" /></div>
+            <div class="logo-item"><img src="assets/mcl_logo.svg" alt="MCL Logo" /></div>
+            <div class="logo-item"><img src="assets/cw_logo.svg" alt="C&amp;W Logo" /></div>
+            <div class="logo-item"><img src="assets/idap_logo.svg" alt="IDAP Logo" /></div>
+            <div class="logo-item"><img src="assets/pha_logo.svg" alt="PHA Logo" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Overview & Timeline Section -->
     <section class="section section-light" id="about-overview">
       <div class="container">
         <div class="row align-items-center gy-5">
-          <div class="col-lg-5">
+          <div class="col-lg-6 reveal">
             <span class="eyebrow text-primary">About Jamal Group</span>
-            <h2>Pakistan's integrated industrial partner</h2>
-            <p>Jamal Group operates across construction, engineering and concrete manufacturing, delivering value to public and private clients with safety, quality and long-term partnerships.</p>
+            <h2 class="mb-4">Delivering Industrial &amp; Infrastructure Excellence</h2>
+            <p class="lead text-muted mb-4">Jamal Group is a growing business group dedicated to delivering excellence in manufacturing, engineering, and construction. Built on a foundation of quality, integrity, and innovation, the Group has established a strong reputation for providing reliable products and services that support Pakistan’s industrial and infrastructure development.</p>
+            
+            <h3 class="h5 fw-bold text-primary mb-3">Our Historical Milestones</h3>
+            <!-- Shorter node timeline form -->
+            <div class="node-timeline">
+              <div class="node-item">
+                <div class="node-circle">1995</div>
+                <div class="node-title">Engineering</div>
+                <div class="node-desc">Founding of Jamal Engineering Works</div>
+              </div>
+              <div class="node-item">
+                <div class="node-circle">2019</div>
+                <div class="node-title">Construction</div>
+                <div class="node-desc">Establishment of Jamal Construction Works</div>
+              </div>
+              <div class="node-item">
+                <div class="node-circle">2025</div>
+                <div class="node-title">Concrete</div>
+                <div class="node-desc">Launch of Jamal Concrete Solutions</div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-7">
+          
+          <div class="col-lg-6 reveal">
             <div class="row g-4">
-              <div class="col-md-4">
-                <article class="feature-card">
-                  <i class="bi bi-building fs-3 text-primary"></i>
-                  <h3>Construction</h3>
-                  <p>Roads, infrastructure and urban development projects delivered with dependable execution.</p>
-                  <a href="construction.html" class="text-decoration-none text-primary fw-semibold mt-2 d-inline-block">Learn more <i class="bi bi-arrow-right"></i></a>
+              <div class="col-md-6">
+                <article class="feature-card h-100">
+                  <div class="fs-2 text-secondary mb-3"><i class="bi bi-shield-check"></i></div>
+                  <h3>Quality Centric</h3>
+                  <p class="small text-muted mb-0">Every product and infrastructure project meets strict quality benchmarks and international concrete standards.</p>
                 </article>
               </div>
-              <div class="col-md-4">
-                <article class="feature-card">
-                  <i class="bi bi-gear-wide-connected fs-3 text-primary"></i>
-                  <h3>Engineering</h3>
-                  <p>Precision manufacturing, steel fabrication and contract engineering for industrial clients.</p>
-                  <a href="engineering.html" class="text-decoration-none text-primary fw-semibold mt-2 d-inline-block">Learn more <i class="bi bi-arrow-right"></i></a>
+              <div class="col-md-6">
+                <article class="feature-card h-100">
+                  <div class="fs-2 text-secondary mb-3"><i class="bi bi-cpu"></i></div>
+                  <h3>Innovation Led</h3>
+                  <p class="small text-muted mb-0">Investing in modern concrete manufacturing technologies, welding automation, and project management tools.</p>
                 </article>
               </div>
-              <div class="col-md-4">
-                <article class="feature-card">
-                  <i class="bi bi-bricks fs-3 text-primary"></i>
-                  <h3>Concrete</h3>
-                  <p>Modern production of hollow blocks, paving stones and precast solutions for every project.</p>
-                  <a href="concrete.html" class="text-decoration-none text-primary fw-semibold mt-2 d-inline-block">Learn more <i class="bi bi-arrow-right"></i></a>
+              <div class="col-md-6">
+                <article class="feature-card h-100">
+                  <div class="fs-2 text-secondary mb-3"><i class="bi bi-people"></i></div>
+                  <h3>Trusted Partners</h3>
+                  <p class="small text-muted mb-0">Maintaining multi-decade partnerships with public sector boards, private corporations, and contractors.</p>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="feature-card h-100">
+                  <div class="fs-2 text-secondary mb-3"><i class="bi bi-signpost-split"></i></div>
+                  <h3>Integrated Scope</h3>
+                  <p class="small text-muted mb-0">End-to-end execution capability spanning parts supply, structural steel, civil work, and precast solutions.</p>
                 </article>
               </div>
             </div>
@@ -143,43 +194,77 @@
       </div>
     </section>
 
-    <section class="section" id="subsidiaries">
+    <!-- Message from the CEO Preview -->
+    <section class="section section-white">
       <div class="container">
-        <div class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-3 mb-4">
-          <div>
-            <span class="eyebrow text-secondary">Subsidiaries</span>
-            <h2>Three brands with one shared purpose</h2>
+        <div class="ceo-card-horizontal reveal">
+          <div class="ceo-image-wrapper">
+            <img src="assets/ceo.jpeg" alt="Adil Ghazanfar Awan" class="ceo-image" />
           </div>
-          <a href="subsidiaries.html" class="text-decoration-none text-primary fw-semibold">Explore all subsidiaries <i class="bi bi-arrow-right"></i></a>
+          <div class="position-relative">
+            <div class="ceo-quote-mark">“</div>
+            <span class="eyebrow eyebrow-accent mb-3">CEO Message</span>
+            <h2 class="h3 fw-bold text-primary mb-3">Welcome to Jamal Group</h2>
+            <p class="text-muted italic mb-4">"At Jamal Group, we believe that every successful enterprise is built upon a foundation of integrity, innovation, quality, and unwavering commitment to excellence. Our journey is driven by a vision to create lasting value for our customers, partners, employees, and communities through businesses that contribute meaningfully to Pakistan’s growth and development."</p>
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+              <div>
+                <h4 class="h6 fw-bold mb-0 text-primary">Adil Ghazanfar Awan</h4>
+                <p class="small text-secondary mb-0">Chief Executive Officer, Jamal Group</p>
+              </div>
+              <a href="about.html#ceo-message" class="btn btn-outline-primary btn-sm">Read Full Message <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subsidiaries Section -->
+    <section class="section section-light" id="subsidiaries">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-3 mb-5">
+          <div>
+            <span class="eyebrow text-secondary">Our Group Structure</span>
+            <h2>Three Businesses, One Vision of Quality</h2>
+          </div>
+          <a href="subsidiaries.html" class="btn btn-outline-primary">Explore All Subsidiaries <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="row g-4">
-          <div class="col-md-4">
-            <a href="concrete.html" class="card card-subsidiary h-100 text-decoration-none text-dark">
-              <div class="card-body text-center">
-                <img src="assets/concrete_logo.png" alt="Jamal Concrete Solutions logo" class="company-logo mx-auto" />
-                <span class="eyebrow text-primary">Jamal Concrete Solutions (Pvt) Ltd</span>
-                <h3 class="h5 mt-3">Crafting Concrete Excellence.</h3>
-                <p>High-performance concrete products and precast solutions for urban and industrial projects.</p>
+          <div class="col-lg-4 reveal">
+            <a href="concrete.html" class="card-subsidiary">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <img src="assets/concrete_logo.png" alt="Jamal Concrete Solutions logo" class="company-logo" />
+                <span class="eyebrow text-primary">Concrete Solutions</span>
+                <h3 class="h5 mt-2 fw-bold text-primary">Crafting Concrete Excellence.</h3>
+                <p class="small text-muted">High-performance paving stones, tough kerbstones, hollow blocks, and customized precast elements for urban setups.</p>
+              </div>
+              <div class="mt-4 text-secondary fw-bold small d-flex align-items-center gap-2">
+                Explore Concrete <i class="bi bi-arrow-right"></i>
               </div>
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="engineering.html" class="card card-subsidiary h-100 text-decoration-none text-dark">
-              <div class="card-body text-center">
-                <img src="assets/eng_logo.png" alt="Jamal Engineering Works logo" class="company-logo mx-auto" />
-                <span class="eyebrow text-primary">Jamal Engineering Works (Pvt) Ltd</span>
-                <h3 class="h5 mt-3">Precision. Performance. Progress.</h3>
-                <p>Automobile components, steel fabrication and engineering contracting with industrial-grade quality.</p>
+          <div class="col-lg-4 reveal">
+            <a href="engineering.html" class="card-subsidiary">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <img src="assets/eng_logo.png" alt="Jamal Engineering Works logo" class="company-logo" />
+                <span class="eyebrow text-primary">Engineering Works</span>
+                <h3 class="h5 mt-2 fw-bold text-primary">Precision. Performance. Progress.</h3>
+                <p class="small text-muted">A respected vendor supplying top-tier automobile components for two/three wheelers and contract steel fabrication.</p>
+              </div>
+              <div class="mt-4 text-secondary fw-bold small d-flex align-items-center gap-2">
+                Explore Engineering <i class="bi bi-arrow-right"></i>
               </div>
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="construction.html" class="card card-subsidiary h-100 text-decoration-none text-dark">
-              <div class="card-body text-center">
-                <img src="assets/const_logo.png" alt="Jamal Construction Works logo" class="company-logo mx-auto" />
-                <span class="eyebrow text-primary">Jamal Construction Works (SMC) Pvt Ltd</span>
-                <h3 class="h5 mt-3">Building the Foundations of Tomorrow.</h3>
-                <p>Roads, drainage systems, infrastructure and utility works built for long-term performance.</p>
+          <div class="col-lg-4 reveal">
+            <a href="construction.html" class="card-subsidiary">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <img src="assets/const_logo.png" alt="Jamal Construction Works logo" class="company-logo" />
+                <span class="eyebrow text-primary">Construction Works</span>
+                <h3 class="h5 mt-2 fw-bold text-primary">Building Foundations of Tomorrow.</h3>
+                <p class="small text-muted">Executing road structures, drainage facilities, utility networks, and public civic works for municipal authorities.</p>
+              </div>
+              <div class="mt-4 text-secondary fw-bold small d-flex align-items-center gap-2">
+                Explore Construction <i class="bi bi-arrow-right"></i>
               </div>
             </a>
           </div>
@@ -187,117 +272,129 @@
       </div>
     </section>
 
+    <!-- Core Services Highlight -->
     <section class="section section-dark" id="services-overview">
       <div class="container">
         <div class="row align-items-end mb-5">
           <div class="col-lg-8">
-            <span class="eyebrow text-white-50">Services</span>
-            <h2 class="text-white">Integrated services for complex industrial programs</h2>
+            <span class="eyebrow eyebrow-accent">Core Capabilities</span>
+            <h2 class="text-white">Providing Infrastructure &amp; Technical Services</h2>
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-md-4">
-            <article class="service-card bg-white rounded-4 p-4 h-100">
-              <i class="bi bi-truck-flatbed text-primary fs-2 mb-3"></i>
-              <h3>Roads & Infrastructure</h3>
-              <p>End-to-end roadway, drainage and site development with strong execution controls.</p>
+          <div class="col-md-4 reveal">
+            <article class="service-card text-dark h-100">
+              <i class="bi bi-truck-flatbed text-secondary fs-2 mb-3 d-block"></i>
+              <h3 class="fw-bold mb-3 text-primary">Roads &amp; Civic Works</h3>
+              <p class="text-muted small mb-0">Laying down robust roadways, stormwater channels, and complex sewer lines for Lahore's civic authorities.</p>
             </article>
           </div>
-          <div class="col-md-4">
-            <article class="service-card bg-white rounded-4 p-4 h-100">
-              <i class="bi bi-tools text-primary fs-2 mb-3"></i>
-              <h3>Steel Fabrication</h3>
-              <p>Precision steel works and manufacturing for industrial structures and transport systems.</p>
+          <div class="col-md-4 reveal">
+            <article class="service-card text-dark h-100">
+              <i class="bi bi-tools text-secondary fs-2 mb-3 d-block"></i>
+              <h3 class="fw-bold mb-3 text-primary">Automotive &amp; Steel Works</h3>
+              <p class="text-muted small mb-0">High-volume stamping, machining, and structural welding of automotive chassis and support frames.</p>
             </article>
           </div>
-          <div class="col-md-4">
-            <article class="service-card bg-white rounded-4 p-4 h-100">
-              <i class="bi bi-shield-check text-primary fs-2 mb-3"></i>
-              <h3>Quality Manufacturing</h3>
-              <p>Modern concrete and precast production backed by rigorous quality assurance.</p>
+          <div class="col-md-4 reveal">
+            <article class="service-card text-dark h-100">
+              <i class="bi bi-building-fill-check text-secondary fs-2 mb-3 d-block"></i>
+              <h3 class="fw-bold mb-3 text-primary">Precast Concrete Supply</h3>
+              <p class="text-muted small mb-0">Mass production of paving stones, customized precast components, and hollow blocks with high load bearing rates.</p>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-stats">
+    <!-- Animated Counter Section -->
+    <section class="section section-light">
       <div class="container">
         <div class="row g-4 text-center">
-          <div class="col-md-3">
-            <div class="counter-box bg-white rounded-4 p-4 h-100 reveal" data-counter="35">35+</div>
-            <p class="mt-3 mb-0 text-secondary">Years Experience</p>
+          <div class="col-md-3 col-6">
+            <div class="counter-box reveal">
+              <div class="counter-value" data-counter="35">0</div>
+              <p class="mt-2 mb-0 text-muted fw-bold">Years Experience</p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box bg-white rounded-4 p-4 h-100 reveal" data-counter="3">0</div>
-            <p class="mt-3 mb-0 text-secondary">Companies</p>
+          <div class="col-md-3 col-6">
+            <div class="counter-box reveal">
+              <div class="counter-value" data-counter="3">0</div>
+              <p class="mt-2 mb-0 text-muted fw-bold">Subsidiaries</p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box bg-white rounded-4 p-4 h-100 reveal" data-counter="120">0</div>
-            <p class="mt-3 mb-0 text-secondary">Projects Delivered</p>
+          <div class="col-md-3 col-6">
+            <div class="counter-box reveal">
+              <div class="counter-value" data-counter="120">0</div>
+              <p class="mt-2 mb-0 text-muted fw-bold">Projects Delivered</p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box bg-white rounded-4 p-4 h-100 reveal" data-counter="100">0</div>
-            <p class="mt-3 mb-0 text-secondary">Nationwide Operations</p>
+          <div class="col-md-3 col-6">
+            <div class="counter-box reveal">
+              <div class="counter-value" data-counter="100">0</div>
+              <p class="mt-2 mb-0 text-muted fw-bold">% Quality Certified</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="footer-cta">
+    <!-- Footer CTA Section -->
+    <section class="section section-white py-5">
       <div class="container">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 p-5 bg-white rounded-4 shadow-sm">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 p-5 bg-light border rounded-4 shadow-sm reveal">
           <div>
-            <span class="eyebrow text-primary">Contact Jamal Group</span>
-            <h2 class="mb-2">Ready to partner on your next industrial project?</h2>
-            <p class="mb-0 text-secondary">Connect with our corporate team for concrete, engineering and construction services tailored to Pakistan.</p>
+            <span class="eyebrow text-primary">Partner With Jamal Group</span>
+            <h2 class="mb-2 fw-bold text-primary">Ready to execute your industrial project?</h2>
+            <p class="mb-0 text-muted">Get in touch with our corporate experts to source concrete products, metal works, or civil construction.</p>
           </div>
-          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us <i class="bi bi-envelope"></i></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer bg-dark text-white py-5">
+  <footer class="site-footer">
     <div class="container">
       <div class="row gy-4">
-        <div class="col-md-4">
-          <h3 class="h5 text-white">Jamal Group</h3>
-          <p class="text-secondary">A trusted Pakistani industrial group focused on construction, engineering and building materials.</p>
-        </div>
-        <div class="col-md-4">
-          <h4 class="h6 text-white">Quick Links</h4>
-          <ul class="list-unstyled footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="subsidiaries.html">Subsidiaries</a></li>
-            <li><a href="projects.html">Projects</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="h6 text-white">Contact</h4>
-          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+92 327 7700128</p>
-          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>ceo@thejamalgroup.com</p>
-          <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Karachi, Pakistan</p>
-          <div class="social-icons mt-3">
+        <div class="col-lg-4">
+          <h3 class="h5">Jamal Group</h3>
+          <p class="text-white-50 small mb-3">A trusted Pakistani industrial conglomerate delivering manufacturing, construction, and engineering solutions since 1995.</p>
+          <div class="social-icons">
             <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="h6">Quick Links</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-secondary small"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-secondary small"></i> About Us</a></li>
+            <li><a href="subsidiaries.html"><i class="bi bi-chevron-right text-secondary small"></i> Our Subsidiaries</a></li>
+            <li><a href="projects.html"><i class="bi bi-chevron-right text-secondary small"></i> Projects Portfolio</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-secondary small"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="h6">Contact &amp; Head Office</h4>
+          <p class="mb-2 text-white-50 small"><i class="bi bi-telephone-fill text-secondary me-2"></i>+92 327 7700128</p>
+          <p class="mb-2 text-white-50 small"><i class="bi bi-envelope-fill text-secondary me-2"></i>ceo@thejamalgroup.com</p>
+          <p class="mb-2 text-white-50 small"><i class="bi bi-envelope-fill text-secondary me-2"></i>info@thejamalgroup.com</p>
+          <p class="mb-0 text-white-50 small"><i class="bi bi-geo-alt-fill text-secondary me-2"></i>Lahore, Punjab, Pakistan</p>
+        </div>
       </div>
-      <div class="text-center text-secondary mt-4">
+      <hr class="border-secondary border-opacity-25 my-4" />
+      <div class="text-center text-white-50 small">
         © 2026 Jamal Group. All rights reserved.
       </div>
     </div>
   </footer>
 
   <a href="https://wa.me/923277700128?text=Hello%20Jamal%20Group%2C%20I%20would%20like%20to%20chat%20about%20your%20services." class="whatsapp-chat" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <i class="bi bi-whatsapp fs-4"></i>
+    <i class="bi bi-whatsapp fs-3"></i>
   </a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
-
-

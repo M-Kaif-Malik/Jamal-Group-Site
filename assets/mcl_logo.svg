@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="100%" height="100%">
+  <rect width="160" height="60" fill="none"/>
+  <g fill="currentColor">
+    <path d="M15,14 L35,14 L35,18 L32,18 L32,46 L18,46 L18,18 L15,18 Z M20,22 L30,22 L30,25 L20,25 Z M20,29 L30,29 L30,32 L20,32 Z M20,36 L30,36 L30,42 L20,42 Z" />
+    <path d="M12,18 L38,18 L38,20 L12,20 Z" />
+    <text x="50" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" letter-spacing="0.1em">MCL</text>
+    <text x="50" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="8" letter-spacing="0.05em">METROPOLITAN CORP.</text>
+  </g>
+</svg>
